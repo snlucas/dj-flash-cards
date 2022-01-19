@@ -1,0 +1,11 @@
+{% extends "flash_card/base.html" %}
+
+{% block title %}Flash Cards{% endblock title %}
+
+{% block content %}
+{% for card in cards %}
+<h1>{{ card }}</h1>
+<p>{{ card.answer }}</p>
+<a href="#">{{ card.tag }}</a>
+{% endfor %}
+{% endblock content %}
